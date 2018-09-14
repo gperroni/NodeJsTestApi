@@ -195,6 +195,7 @@ module.exports = function(app){
 
   app.get('/teste', function(req,res){
       console.log("Funfou");
-      res.status(200).json("Ola");
+
+      res.status(200).json("Ola  " + req.query.myParameter);
   });
 }

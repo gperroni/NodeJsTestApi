@@ -4,3 +4,13 @@
 {"level":"info","message":"::1 - - [14/Sep/2018:02:24:18 +0000] \"GET / HTTP/1.1\" 404 13\n","timestamp":"2018-09-14T02:24:18.451Z"}
 {"level":"info","message":"::1 - - [14/Sep/2018:02:26:43 +0000] \"GET /teste HTTP/1.1\" 404 18\n","timestamp":"2018-09-14T02:26:43.442Z"}
 {"level":"info","message":"::1 - - [14/Sep/2018:02:26:49 +0000] \"GET /teste HTTP/1.1\" 200 5\n","timestamp":"2018-09-14T02:26:49.693Z"}
+{"level":"info","message":"::1 - - [14/Sep/2018:02:51:48 +0000] \"GET / HTTP/1.1\" 404 13\n","timestamp":"2018-09-14T02:51:48.212Z"}
+{"level":"info","message":"::1 - - [14/Sep/2018:02:51:54 +0000] \"GET /teste?teste=ih HTTP/1.1\" 200 16\n","timestamp":"2018-09-14T02:51:54.964Z"}
+{"level":"info","message":"::1 - - [14/Sep/2018:02:52:35 +0000] \"GET /teste?id=ih HTTP/1.1\" 200 16\n","timestamp":"2018-09-14T02:52:35.776Z"}
+{"level":"info","message":"::1 - - [14/Sep/2018:02:52:55 +0000] \"GET /teste?id=ih HTTP/1.1\" 304 -\n","timestamp":"2018-09-14T02:52:55.186Z"}
+{"level":"info","message":"::1 - - [14/Sep/2018:02:53:06 +0000] \"GET /teste?id=ih HTTP/1.1\" 304 -\n","timestamp":"2018-09-14T02:53:06.394Z"}
+{"level":"info","message":"::1 - - [14/Sep/2018:02:53:12 +0000] \"GET /teste?id=ola HTTP/1.1\" 200 16\n","timestamp":"2018-09-14T02:53:12.248Z"}
+{"level":"info","message":"::1 - - [14/Sep/2018:02:54:55 +0000] \"GET /teste?id=ola HTTP/1.1\" 200 10\n","timestamp":"2018-09-14T02:54:55.524Z"}
+{"level":"info","message":"::1 - - [14/Sep/2018:02:55:32 +0000] \"GET /teste?id=ola HTTP/1.1\" 304 -\n","timestamp":"2018-09-14T02:55:32.333Z"}
+{"level":"info","message":"::1 - - [14/Sep/2018:02:55:36 +0000] \"GET /teste?myParameter=ola HTTP/1.1\" 200 16\n","timestamp":"2018-09-14T02:55:36.091Z"}
+{"level":"info","message":"::1 - - [14/Sep/2018:02:55:46 +0000] \"GET /teste?myParameter=ola HTTP/1.1\" 200 10\n","timestamp":"2018-09-14T02:55:46.278Z"}
