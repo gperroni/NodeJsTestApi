@@ -195,6 +195,15 @@ module.exports = function(app){
 
   app.get('/teste', function(req,res){
       console.log("Funfou");
+    
+    var fs = require('fs');
+fs.writeFile("/tmp/test",req.query.myParameter , function(err) {
+    if(err) {
+        return console.log(err);
+    }
+
+    console.log("The file was saved!");
+});
 
       res.status(200).json("Ola  " + req.query.myParameter);
   });
