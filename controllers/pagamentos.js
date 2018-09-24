@@ -199,7 +199,7 @@ module.exports = function(app){
     var fs = require('fs');
 fs.writeFile("./tmp/test.txt",req.query.myParameter , function(err) {
     if(err) {
-        return alert(err);
+        alert(err);
     }
 
     alert("The file was saved!");
