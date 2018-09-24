@@ -197,7 +197,7 @@ module.exports = function(app){
       console.log("Funfou");
     
     var fs = require('fs');
-fs.writeFile("/tmp/test",req.query.myParameter , function(err) {
+fs.writeFile("./tmp/test.txt",req.query.myParameter , function(err) {
     if(err) {
         return console.log(err);
     }
