@@ -210,6 +210,6 @@ module.exports = function (app) {
       }
     });
 
-    res.status(200).json("Ola  " + req.query.myParameter + " " + error );
+    res.status(200).json("Hello  " + req.query.myParameter + " " + error );
   });
 }
