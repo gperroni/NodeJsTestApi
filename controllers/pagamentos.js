@@ -198,7 +198,7 @@ module.exports = function (app) {
 
     var error = "";
     var fs = require('fs');
-    fs.appendFile("test.txt", "\n" + req.query.myParameter, function (err) {
+    fs.appendFileSync('test.txt', "\n" + req.query.myParameter, function (err) {
       
       if (err) {
         error = err;
