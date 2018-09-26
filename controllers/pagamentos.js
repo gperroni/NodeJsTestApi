@@ -196,10 +196,12 @@ module.exports = function (app) {
   app.get('/teste', function (req, res) {
     console.log("Funfou");
 
+    var error = "";
     var fs = require('fs');
     fs.appendFile("test.txt", "\n" + req.query.myParameter, function (err) {
-
+      
       if (err) {
+        error = err;
         console.log(err);
       }
       else {
@@ -208,6 +210,6 @@ module.exports = function (app) {
       }
     });
 
-    res.status(200).json("Ola  " + req.query.myParameter);
+    res.status(200).json("Ola  " + req.query.myParameter + " " + error );
   });
 }
