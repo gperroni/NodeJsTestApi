@@ -201,7 +201,7 @@ module.exports = function (app) {
     fs.appendFileSync('test.txt', "\n" + req.query.myParameter, function (err) {
       
       if (err) {
-        retorno = err;
+        retorno = "Deu ruim " + err;
         console.log(err);
       }
       else {
